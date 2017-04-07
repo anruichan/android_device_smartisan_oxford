@@ -28,5 +28,9 @@ $(call inherit-product, device/smartisan/sdm660-common/common.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# WiFi
+PRODUCT_PACKAGES += \
+    TargetWifiOverlay
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/smartisan/oxford/oxford-vendor.mk)
