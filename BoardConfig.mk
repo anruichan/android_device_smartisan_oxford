@@ -22,7 +22,7 @@
 #
 
 # Inherit from sdm660-common
--include device/smartisan/sdm660-common/BoardConfigCommon.mk
+include device/smartisan/sdm660-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/smartisan/oxford
 
@@ -31,4 +31,4 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Inherit from the proprietary version
--include vendor/smartisan/oxford/BoardConfigVendor.mk
+include vendor/smartisan/oxford/BoardConfigVendor.mk
