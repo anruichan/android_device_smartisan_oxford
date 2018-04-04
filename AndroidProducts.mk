@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_oxford.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_oxford-user \
+    lineage_oxford-userdebug \
+    lineage_oxford-eng
