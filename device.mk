@@ -24,5 +24,9 @@
 # Inherit from sdm660-common
 $(call inherit-product, device/smartisan/sdm660-common/common.mk)
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/smartisan/oxford/oxford-vendor.mk)
