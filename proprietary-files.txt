@@ -1,0 +1,5 @@
+# Fingerprint - Novatek
+lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.nvtfp.so
+vendor/lib64/libfpr_ca.so
+vendor/lib64/libfpr_library.so
+vendor/lib64/libfpr_manager.so
