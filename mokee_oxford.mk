@@ -22,13 +22,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from oxford device
 $(call inherit-product, device/smartisan/oxford/device.mk)
 
-# Inherit some common MK stuff.
-$(call inherit-product, vendor/mk/config/common_full_phone.mk)
+# Inherit some common MoKee stuff.
+$(call inherit-product, vendor/mokee/config/common_full_phone.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.mk.maintainer=XiNGRZ
 
-PRODUCT_NAME := mk_oxford
+PRODUCT_NAME := mokee_oxford
 PRODUCT_BRAND := SMARTISAN
 PRODUCT_DEVICE := oxford
 PRODUCT_MANUFACTURER := smartisan
