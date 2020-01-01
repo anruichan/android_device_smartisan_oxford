@@ -40,7 +40,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="oxford" \
     PRIVATE_BUILD_DESC="oxford-user 7.1.1 NGI77B 1 dev-keys"
 
-BUILD_FINGERPRINT := SMARTISAN/oxford/oxford:7.1.1/NGI77B/1560257220:user/dev-keys
+BUILD_FINGERPRINT := SMARTISAN/oxford/oxford:7.1.1/NGI77B/1571975077:user/dev-keys
 
 # Sign bootable images
 PRODUCT_SUPPORTS_VERITY := true
