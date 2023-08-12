@@ -21,7 +21,8 @@
 # definition file).
 #
 
-$(call inherit-product, vendor/smartisan/oxford/oxford-vendor.mk)
-
 # Inherit from sdm660-common
 $(call inherit-product, device/smartisan/sdm660-common/common.mk)
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/smartisan/oxford/oxford-vendor.mk)

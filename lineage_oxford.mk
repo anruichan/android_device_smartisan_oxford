@@ -22,13 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from oxford device
 $(call inherit-product, device/smartisan/oxford/device.mk)
 
-# Inherit some common MoKee stuff.
-$(call inherit-product, vendor/mokee/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.mk.maintainer=XiNGRZ
 
-PRODUCT_NAME := mokee_oxford
+# Device identifier. This must come after all inclusions
+PRODUCT_NAME := lineage_oxford
 PRODUCT_BRAND := SMARTISAN
 PRODUCT_DEVICE := oxford
 PRODUCT_MANUFACTURER := smartisan
@@ -40,6 +41,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="oxford" \
     PRIVATE_BUILD_DESC="oxford-user 7.1.1 NGI77B 1 dev-keys"
 
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := SMARTISAN/oxford/oxford:7.1.1/NGI77B/1571975077:user/dev-keys
 
 # Sign bootable images
