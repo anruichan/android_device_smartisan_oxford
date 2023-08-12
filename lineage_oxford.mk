@@ -41,9 +41,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := SMARTISAN/oxford/oxford:7.1.1/NGI77B/1571975077:user/dev-keys
 
-# Sign bootable images
-PRODUCT_SUPPORTS_VERITY := true
-PRODUCT_SUPPORTS_BOOT_SIGNER := true
-PRODUCT_VERITY_SIGNING_KEY := build/target/product/security/verity
-
 TARGET_VENDOR := Smartisan
